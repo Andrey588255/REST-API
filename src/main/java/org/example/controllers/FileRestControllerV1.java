@@ -24,9 +24,7 @@ import java.util.List;
 
 @MultipartConfig
 @WebServlet("/api/files")
-
-
-public class FileRestController extends HttpServlet {
+public class FileRestControllerV1 extends HttpServlet {
     private final FileRepository fileRepository = new FileRepositoryImpl();
     private final EventService eventService = new EventServiceImpl();
     private final UserService userService = new UserServiceImpl();

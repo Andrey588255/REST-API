@@ -8,29 +8,23 @@
     <description>Automated generated Application Wrapper</description>
 
     <servlet>
-        <servlet-name>Rest</servlet-name>
-        <display-name>Rest Portlet</display-name>
-        <description>Generated Portlet Wrapper</description>
-        <servlet-class>org.apache.pluto.core.PortletServlet</servlet-class>
+        <servlet-name>EventServlet</servlet-name>
+        <servlet-class>org.example.controllers.EventRestControllerV1</servlet-class>
+    </servlet>
 
-        <init-param>
-            <param-name>portlet-class</param-name>
-            <param-value>org.example.Rest</param-value>
-        </init-param>
-
-        <init-param>
-            <param-name>portlet-guid</param-name>
-            <param-value>yourportlet.Rest</param-value>
-        </init-param>
+    <servlet>
+        <servlet-name>FileServlet</servlet-name>
+        <servlet-class>org.example.controllers.FileRestControllerV1</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>Rest</servlet-name>
-        <url-pattern>/Rest/*</url-pattern>
+        <servlet-name>EventServlet</servlet-name>
+        <url-pattern>/api/v1/events/*</url-pattern>
     </servlet-mapping>
 
-    <taglib>
-        <taglib-uri>http://java.sun.com/portlet</taglib-uri>
-        <taglib-location>/WEB-INF/tld/portlet.tld</taglib-location>
-    </taglib>
+    <servlet-mapping>
+        <servlet-name>FileServlet</servlet-name>
+        <url-pattern>/api/v1/files/*</url-pattern>
+    </servlet-mapping>
+
 </web-app>
