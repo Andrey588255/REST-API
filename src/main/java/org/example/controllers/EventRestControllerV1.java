@@ -28,13 +28,6 @@ public class EventRestControllerV1 extends HttpServlet {
             response.setContentType("application/json");
             PrintWriter out = response.getWriter();
             out.print(eventList);
-            out.flush();
-        } else {
-            Event e = eventService.getById(id);
-            response.setContentType("application/json");
-            PrintWriter out = response.getWriter();
-            out.print(e);
-            out.flush();
         }
     }
 }

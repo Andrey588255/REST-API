@@ -26,7 +26,6 @@ public class FileServiceImpl implements FileService {
     private EventService eventService;
     private FileRepository fileRepository;
 
-
     @Override
     public File uploadFile(InputStream inputStream, Integer userId) {
         String fileName = GetFileNameUtil.getFileName(inputStream);

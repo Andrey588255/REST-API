@@ -42,7 +42,17 @@ public class File {
                 ", \"filePath\":" + "\"" + filePath + "\"" +
                 "}";
     }
-       }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setFileName(String fileName) {
+    }
+
+    public void setFilePath(String s) {
+    }
+}
 
 
 

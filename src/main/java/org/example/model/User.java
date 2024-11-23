@@ -46,4 +46,8 @@ public class User {
                 "\"id\":" + id +
                 ", \"userName\":" + "\"" + userName + "\"" + "}";
     }
+
+    public Integer getId() {
+        return id;
+    }
 }

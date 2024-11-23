@@ -44,4 +44,22 @@ public class Event {
                 ", \"file\":" + file +
                 "}";
     }
+
+    public Object getId() {
+        return id;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public User getFile() {
+        return null;
+    }
+
+    public void setUser(User user) {
+    }
+
+    public void setFile(File file) {
+    }
 }
